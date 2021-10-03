@@ -477,6 +477,7 @@ describe GirFFI::Builders::UserDefinedBuilder do
         end
       end
 
+      focus
       it "allows the vfunc to be called through its invoker" do
         obj = derived_class.new
         _(obj.do_matrix("bar")).must_equal 44
